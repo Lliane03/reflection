@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Narrative Data Privacy & Cyber Security</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            font-family: 'Cambria', serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: large;
+            background-image: url("cyber.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .styled-paragraph {
+            font-size: 27px;
+            line-height: 1.5;
+            text-align: justify;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 1000px;
+            backdrop-filter: blur(10px);
+        }
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .styled-paragraph {
+                font-size: 20px;
+                padding: 15px;
+                max-width: 100%;
+            }
+        }
+        .styled-paragraph:hover {
+            background-color: rgba(255, 48, 21, 0.534);
+            transition: background-color 0.3s ease;
+        }
+
+        #para1:hover {
+            transform:translateX(40px);
+        }
+
+        #para2:hover {
+            transform:translateX(-40px);
+        }
+
+        #para3:hover {
+            transform:translateX(40px);
+        }
+
+        #para4:hover {
+            transform:translateX(-40px);
+        }
+
+        #para5:hover {
+            transform:translateX(40px);
+        }
+
+        #para6:hover {
+            transform:translateX(-40px);
+        }
+    </style>
+</head>
+<body>
+    <h1>"Angel's Reflection about the Data Privacy and Awareness Campaign"</h1>
+    <div id="paragraphs-container">
+        <div class="styled-paragraph" id="para1"></div>
+        <div class="styled-paragraph" id="para2"></div>
+        <div class="styled-paragraph" id="para3"></div>
+        <div class="styled-paragraph" id="para4"></div>
+        <div class="styled-paragraph" id="para5"></div>
+        <div class="styled-paragraph" id="para6"></div>
+    </div>
+    <py-script>
+        paragraphs = [
+            "My recent participation in the Data Privacy and Awareness Campaign has significantly deepened my understanding between technology and privacy. The seminar served as a stark reminder of the alarming prevalence of cybercrimes, the vulnerability of internet users to cyberattacks, and the potential risks associated with its misuse.",
+            "One of the key takeaways from the event was the alarming statistics surrounding cybercrime. Despite the implementation of new laws and policies, the prevalence of cyberattacks remains a pressing concern. The seminar highlighted the vulnerability of individuals and organizations alike to online threats, from cyber libel to the dissemination of sensitive data. Platforms like Telegram, often perceived as secure, have unfortunately become breeding grounds for illegal activities.",
+            "The seminar also shed light on the reality that users of cyberspace are frequently victims of cyberattacks. Personal information can be easily compromised, leading to identity theft, financial loss, and emotional distress. Thus, the importance of proactive measures to safeguard personal information, such as using complex passwords, avoiding phishing scams, and being cautious about sharing sensitive data online are very important. The ubiquity of information in the digital age further exacerbates this issue. Every online interaction leaves a digital footprint, making it increasingly difficult to maintain privacy.",
+            "From a technical standpoint, I was intrigued by the discussion on data protection measures implemented by organizations. As a future IT professional, I recognize the crucial role technology plays in safeguarding data. I believe that by leveraging my knowledge and skills, I can help develop innovative solutions to address these challenges.",
+            "Moreover, the seminar underscored the ethical implications of data privacy. It is essential to consider the potential consequences of data breaches and the impact they can have on individuals and communities. As a responsible digital citizen, I believe it is my duty to promote awareness and advocate for ethical data practices.",
+            "Moving forward, I will strive to stay informed about the latest cybersecurity trends and best practices. I will also advocate for data privacy awareness among my peers and community, emphasizing the importance of protecting personal information and avoiding online scams. Additionally, I plan to explore opportunities to contribute to research and development in the field of cybersecurity, with the aim of developing more effective tools and strategies to safeguard digital privacy."
+        ]
+
+        for i, paragraph in enumerate(paragraphs):
+            paragraph_element = Element(f"para{i+1}")
+            paragraph_element.write(paragraph)
+    </py-script>
+</body>
+</html>
